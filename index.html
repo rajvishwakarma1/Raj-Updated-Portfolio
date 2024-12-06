@@ -208,33 +208,33 @@
                         <div id="page5-content">
                           
                             <h2 id="certi_head"> <span>C</span> <span>E</span> <span>R</span> <span>T</span> <span>I</span> <span>F</span> <span>I</span> <span>C</span> <span>A</span> <span>T</span> <span>E</span> <span>S</span></h2>
-                            <div class="page5-container" data-image="./media/ML.jpg">
-                                <h3>Java as a Second Language - STANDFORD</h3>
-                                <h3>January 2023</h3>
+                            <div class="page5-container" data-image="./media/1-JavaasaSecondLanguage.jpg">
+                                <h3>Java as a Second Language - LEARNQUEST</h3>
+                                <h3>June 2024</h3>
                             </div>
-                            <div class="page5-container" data-image="./media/webdev.jpg">
-                                <h3>MERN Stack Web-developement - UDEMY</h3>
-                                <h3>April 2023</h3>
+                            <div class="page5-container" data-image="./media/2-DataStructuresandPerformance.jpg">
+                                <h3>Data  Structures and Performance - UC SAN DIEGO</h3>
+                                <h3>June 2024</h3>
                             </div>
-                            <div class="page5-container" data-image="./media/cSecurity.jpg">
-                                <h3>Introduction to CyberSecurity - CISCO</h3>
+                            <div class="page5-container" data-image="./media/3-PrinciplesofUX-UIDesign.jpg">
+                                <h3>Principles of UX-UI Design - META</h3>
+                                <h3>March 2024</h3>
+                            </div>
+                            <div class="page5-container" data-image="./media/4-IntroductiontoComputerVisionandImageProcessing.jpg">
+                                <h3>Introduction to Computer Vision and Image Processing - IBM</h3>
+                                <h3>December 2023</h3>
+                            </div>
+                            <div class="page5-container" data-image="./media/5-GoldmanSachsEngineeringJobSimulation.jpg">
+                                <h3>Goldman Sachs Engineering Job Simulation - GOLDMAN SACHS</h3>
                                 <h3>July 2023</h3>
                             </div>
-                            <div class="page5-container" data-image="./media/cloud.jpg">
-                                <h3>Google Cloud and Generative AI - GOOGLE</h3>
-                                <h3>November 2023</h3>
+                            <div class="page5-container" data-image="./media/6-DataVisualisationwithR.jpg">
+                                <h3>Data Visualisation with R - IBM</h3>
+                                <h3>June 2022</h3>
                             </div>
-                            <div class="page5-container" data-image="./media/accenture.jpg">
-                                <h3>Go for Gold contest - ACCENTURE</h3>
-                                <h3>May 2024</h3>
-                            </div>
-                            <div class="page5-container" data-image="./media/gdsc.jpg">
-                                <h3>Core team Member - GOOGLE DSC</h3>
-                                <h3>August 2024</h3>
-                            </div>
-                            <div class="page5-container" data-image="./media/gssoc.jpg">
-                                <h3>Mentor (Open Source) - GSSOC</h3>
-                                <h3>August 2024</h3>
+                            <div class="page5-container" data-image="./media/7-Front-EndWebUIFrameworksandTools.jpg">
+                                <h3>Front-End Web UI Frameworks and Tools - HKUST</h3>
+                                <h3>June 2022</h3>
                             </div>
                         </div>
                       
@@ -267,25 +267,25 @@
                                 <div id="socials">
 
                                 <div class="social-div">
-                                    <a href="https://www.linkedin.com/in/govind-harsh-sharma/">
+                                    <a href="https://www.linkedin.com/in/rajvishwakarma1/">
                                         <h1>LINKEDIN</h1>
                                         <h1>LINKEDIN</h1>
                                     </a>
                                 </div>
                                 <div class="social-div">
-                                    <a href="https://www.instagram.com/geekwho.lifts/">
+                                    <a href="https://www.instagram.com/rak.vishwakarma_19/">
                                         <h1>INSTAGRAM</h1>
                                         <h1>INSTAGRAM</h1>
                                     </a>
                                 </div>
                                 <div class="social-div">
-                                    <a href="https://twitter.com/GovindHarsh11">
+                                    <a href="https://twitter.com/raj_padhle">
                                         <h1>TWITTER</h1>
                                         <h1>TWITTER</h1>
                                     </a>
                                 </div>
                                 <div class="social-div">
-                                    <a href="https://github.com/ghsharma">
+                                    <a href="https://github.com/rajvishwakarma1">
                                         <h1>GITHUB</h1>
                                         <h1>GITHUB</h1>
                                     </a>
@@ -295,7 +295,7 @@
                             <div id="message">
                                 
                                     <h4> feel free to connect with me on social . </h4>
-                                    <h4> By GHS |  ©2024 All rights reserved.</h4>
+                                    <h4> By RV |  ©2024 All rights reserved.</h4>
                                
                             </div>
                             </div>
@@ -314,5 +314,31 @@
             integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="script.js"></script>
+        <script>
+            function certificates() {
+                var box = document.querySelectorAll(".page5-container");
+                box.forEach(function (elem) {
+                    elem.addEventListener("mouseenter", function () {
+                        var att = elem.getAttribute("data-image");
+                        console.log("Mouse entered:", att); // Debugging statement
+                        cursor.style.width = "450px";
+                        cursor.style.height = "300px";
+                        cursor.style.borderRadius = "0";
+                        cursor.style.backgroundImage = `url(${att})`;
+                        cursor.style.mixBlendMode = "normal"; // Try removing this line if it causes issues
+                    });
+                    elem.addEventListener("mouseleave", function () {
+                        console.log("Mouse left"); // Debugging statement
+                        elem.style.backgroundColor = "transparent";
+                        cursor.style.width = "10px";
+                        cursor.style.height = "10px";
+                        cursor.style.borderRadius = "50%";
+                        cursor.style.backgroundImage = `none`;
+                        cursor.style.mixBlendMode = "difference"; // Try removing this line if it causes issues
+                    });
+                });
+            }
+            certificates();
+        </script>
     </body>
 </html>
