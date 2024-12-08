@@ -315,46 +315,11 @@ function page6() {
         }
     })
 
-    page6.from(".eyes", {
-        scale: 0,
-        opacity: 0.5,
-        duration: 5, // Adjust duration to slow down the animation
-    });
-
-    page6.to(".eyes", {
-        opacity: 1,
-        duration: 5, // Adjust duration to match the previous animation
-        ease: "power1.out"
-    });
 
 
 }
 page6()
 
-
-
-function eyes() {
-
-    let Ball = document.getElementsByClassName("ball");
-    document.onmousemove = function () {
-        //get innerWidth,innerheight for browser
-
-        //get horizontal coordinate of the onmousemove
-        let x = (event.clientX * 100) / window.innerWidth + "%";
-
-        //get the verticle coordinate of onmousemove
-        let y = (event.clientY * 100) / window.innerHeight + "%";
-
-        for (let i = 0; i < 2; i++) {
-            Ball[i].style.left = x;
-            Ball[i].style.top = y;
-            Ball[i].style.transform = "translate(-" + x + ", -" + y + ")";
-        }
-    };
-
-
-}
-eyes()
 
 document.addEventListener('contextmenu', event => event.preventDefault());
 

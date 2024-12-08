@@ -445,22 +445,6 @@ nav button:hover {
     color: white;
 }
 
-.eyes {
-    display: flex;
-    justify-content: center;
-}
-
-.eye {
-    width: 150px;
-    height: 150px;
-    background: #fff;
-    margin: 20px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    animation: blink 3s infinite;
-}
-
 .ball {
     width: 40px;
     height: 40px;
@@ -471,19 +455,6 @@ nav button:hover {
     transform: translate(-50%, -50%);
     border-radius: 50%;
     border: 10px solid #6d6875;
-}
-
-@keyframes blink {
-
-    0%,
-    100% {
-        transform: scale(1, 0.05);
-    }
-
-    5%,
-    95% {
-        transform: scale(1, 1);
-    }
 }
 
 
@@ -833,24 +804,6 @@ h4 {
     .social-div a {
         text-decoration: none;
         color: white;
-    }
-
-    .eyes {
-        margin-top: 30px;
-        /* Add margin to create space between eyes and socials */
-        display: flex;
-        justify-content: center;
-    }
-
-    .eye {
-        margin: 5px;
-        width: 200px;
-        height: 100px;
-        background: #fff;
-        border-radius: 50%;
-        position: relative;
-        overflow: hidden;
-        animation: blink 3s infinite;
     }
 
 

@@ -312,6 +312,13 @@ function animationsGSAP() {
         opacity: 0.5,
     })
 
+    animate.to("#arrow", {
+        y: 10,
+        repeat: -1,
+        duration: .7,
+        yoyo: 1
+    })
+
     animate.to("#down", {
         y: 30,
         repeat: -1,
@@ -559,3 +566,4 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 //         ]
 //     })
 // });
+

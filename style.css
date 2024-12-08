@@ -726,7 +726,7 @@ input:checked+label .description {
 }
 
 #projectcircle {
-    width: 17vh;
+    width: 10vh;
     font-family: tail;
     text-transform: uppercase;
     font-size: 3rem;
